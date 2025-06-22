@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Landing Page</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fffaf0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      float: left;
+      font-size: 28px;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav {
+      float: right;
+      margin-right: 20px;
+    }
+
+    .nav-links {
+      list-style: none;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    header::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #fdd835, #ff6f00);
+      color: #222;
+      padding: 70px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ee0979;
+      color: white;
+      padding: 12px 28px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #c40062;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 50px 0;
+      background: #f0f8ff;
+    }
+
+    .features h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #444;
+    }
+
+    .feature-boxes {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .feature {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      border: 2px solid #e0e0e0;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h4 {
+      margin-bottom: 12px;
+      color: #ff6a00;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">ColorSite</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to ColorSite</h2>
+      <p>Bright, bold, and beginner-friendly web design.</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h3>Why Choose Us?</h3>
+      <div class="feature-boxes">
+        <div class="feature">
+          <h4>✨ Easy to Use</h4>
+          <p>Designed with simplicity so anyone can get started quickly.</p>
+        </div>
+        <div class="feature">
+          <h4>📱 Mobile Ready</h4>
+          <p>Responsive layout works perfectly on all screen sizes.</p>
+        </div>
+        <div class="feature">
+          <h4>📚 Free Resources</h4>
+          <p>Learn HTML, CSS, and more with our beginner-friendly guides.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ColorSite. Made with ❤️ for learning.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
